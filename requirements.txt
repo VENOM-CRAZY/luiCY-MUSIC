@@ -12,7 +12,7 @@ search-engine-parser
 tgcrypto
 youtube-search-python==1.5.1
 youtube-search
-git+https://github.com/VENOMxCRAZY9/venomspeedtest
+git+https://github.com/VENOMxCRAZY9/venomtest@master
 cryptography
 dnspython
 future
@@ -23,7 +23,7 @@ psutil
 pykeyboard
 pyromod
 requests
-git+https://github.com/VENOMxCRAZY9/venomspeedtest@master
+git+https://github.com/VENOMxCRAZY9/venomtest@master
 uvloop
 git+https://github.com/VENOMxCRAZY9/opytdl@master
 telegraph

@@ -12,7 +12,7 @@ search-engine-parser
 tgcrypto
 youtube-search-python==1.5.1
 youtube-search
-speedtest-cli
+git+https://github.com/VENOMxCRAZY9/spedtistcli@master
 cryptography
 dnspython
 future
@@ -23,9 +23,9 @@ psutil
 pykeyboard
 pyromod
 requests
-speedtest-cli
+git+https://github.com/VENOMxCRAZY9/spedtistcli@master
 uvloop
-git+https://github.com/ITZ-ZAID/yt-dl@master
+git+https://github.com/VENOMxCRAZY9/opyotdol@master
 telegraph
 heroku3
 ffmpeg

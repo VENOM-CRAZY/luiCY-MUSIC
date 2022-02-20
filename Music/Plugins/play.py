@@ -245,7 +245,7 @@ async def play(_, message: Message):
         what = "Query Given"
         await LOG_CHAT(message, what)
         query = message.text.split(None, 1)[1]
-        mystic = await message.reply_text("**LUCY Searching**")
+        mystic = await message.reply_text("**🎻🎵🎶 Searching**")
         try:
             a = VideosSearch(query, limit=5)
             result = (a.result()).get("result")

@@ -2,7 +2,7 @@ import asyncio
 from time import time
 from datetime import datetime
 from Music import BOT_USERNAME
-from Music.config import UPDATES_CHANNEL, ZAID_SUPPORT
+from Music.config import UPDATES_CHANNEL, GROUP_SUPPORT
 from Music.MusicUtilities.helpers.filters import command
 from Music.MusicUtilities.helpers.command import commandpro
 from pyrogram import Client, filters
@@ -35,11 +35,11 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/59596f593dce576523df8.jpg",
+        photo=f"https://telegra.ph/file/7de370c57f1a1b7fba923.jpg",
         caption=f"""**A Telegram Music Bot Based Mongodb.
  Add Me To Ur Chat For and Help and And Support Click On Buttons  ...
 💞  These Features A.I Based 
-Powered By [LUCY BOTS](t.me/LUCYHELP) ...
+Powered By [VENOM](t.me/VENOMxCRAZY ...
 **""",
     reply_markup=InlineKeyboardMarkup(
             [
@@ -50,18 +50,18 @@ Powered By [LUCY BOTS](t.me/LUCYHELP) ...
                 ],
                 [
                     InlineKeyboardButton(
-                        "ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ", url=f"https://t.me/LUCYHELP"
+                        "ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ", url=f"https://t.me/V3N0M_0P/40"
                     ),
                     InlineKeyboardButton(
-                        "LUCY", url="https://t.me/LUCY_MANAGER2_bot"
+                        "REPO", url="https://t.me/V3N0M_0P/39"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "CHANNEL", url=f"https://t.me/THANOSOWNER"
+                        "CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        "SUPPORT", url=f"https://t.me/LUCYHELP"
+                        "SUPPORT", url=f"https://t.me/{GROUP_SUPPORT}"
                     )
                 ]
                 
@@ -73,13 +73,13 @@ Powered By [LUCY BOTS](t.me/LUCYHELP) ...
 @Client.on_message(commandpro(["/start", "/alive"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/59596f593dce576523df8.jpg",
+        photo=f"https://telegra.ph/file/7de370c57f1a1b7fba923.jpg",
         caption=f"""Thanks For Adding Me To Ur Chat, For Any Query U Can Join Our Support Groups 🔥♥️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ 💞", url=f"https://t.me/Lucyhelp")
+                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ 💞", url=f"https://t.me/{GROUP_SUPPORT}")
                 ]
             ]
         ),
@@ -89,13 +89,13 @@ async def start(client: Client, message: Message):
 @Client.on_message(command(["repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/59596f593dce576523df8.jpg",
-        caption=f"""LUCY Source Code IS PRIVATE """,
+        photo=f"https://telegra.ph/file/8b1d8ec76a20a379444ec.jpg",
+        caption=url="https://t.me/V3N0M_0P/39",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "RISHABH", url=f"https://t.me/Mafiarishabh")
+                        "VENOM", url=f"https://t.me/VENOMxCRAZY")
                 ]
             ]
         ),

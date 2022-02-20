@@ -25,7 +25,7 @@ async def useradd(_, message: Message):
             return await message.reply_text("✅ Aleady a Sudo User.")
         added = await add_sudo(user.id)
         if added:
-            await message.reply_text(f"✅ Added **{user.mention}** as a Super User for lucy OwO")
+            await message.reply_text(f"✅ Added **{user.mention}** as a Super User for SUDO")
             return os.execvp("python3", ["python3", "-m", "Music"])
         await edit_or_reply(message, text="❌ Something wrong happened, check logs.")  
         return
@@ -37,7 +37,7 @@ async def useradd(_, message: Message):
         return await message.reply_text("✅ Already a Sudo User.")
     added = await add_sudo(user_id)
     if added:
-        await message.reply_text(f"✅ Added **{mention}** as a Super User for lucy OwO")
+        await message.reply_text(f"✅ Added **{mention}** as a Super User for SUDO")
         return os.execvp("python3", ["python3", "-m", "Music"])
     await edit_or_reply(message, text="❌ Something wrong happened, check logs.")  
     return    
@@ -58,7 +58,7 @@ async def userdel(_, message: Message):
             return await message.reply_text(f"❌ Not a part of lucy's Sudo.")        
         removed = await remove_sudo(user.id)
         if removed:
-            await message.reply_text(f"✅ Removed **{user.mention}** from lucy's Sudo.")
+            await message.reply_text(f"✅ Removed **{user.mention}** from SUDO USERS.")
             return os.execvp("python3", ["python3", "-m", "Music"])
         await message.reply_text(f"❌ Something wrong happened.")
         return
@@ -69,7 +69,7 @@ async def userdel(_, message: Message):
         return await message.reply_text(f"❌ Not a part of lucy's Sudo.")        
     removed = await remove_sudo(user_id)
     if removed:
-        await message.reply_text(f"✅ Removed **{mention}** from lucy's Sudo.")
+        await message.reply_text(f"✅ Removed **{mention}** from SUDO USERS.")
         return os.execvp("python3", ["python3", "-m", "Music"])
     await message.reply_text(f"❌ Something wrong happened.")
                 

@@ -29,7 +29,7 @@ print(f"[INFO]: LUCY ASSISTANT STARTED AS {ASSNAME}!")
 async def load_start():
     restart_data = await clean_restart_stage()
     if restart_data:
-        print("[INFO]: SENDING RESTART STATUS TO LUCY SERVER")
+        print("[INFO]: SENDING RESTART STATUS TO  SERVER")
         try:
             await app.edit_message_text(
                 restart_data["chat_id"],
@@ -52,8 +52,8 @@ async def load_start():
             print("Error came while clearing db")
             pass     
     await app.send_message(LOG_GROUP_ID, "Music Bot Started")
-    await client.send_message(LOG_GROUP_ID, "Assistant Of LUCY Music Started")
-    print("[INFO]: STARTED THE LUCY BOT AND SENDING THE INFO TO LUCY SERVER")
+    await client.send_message(LOG_GROUP_ID, "Assistant Music Started")
+    print("[INFO]: STARTED THE MUSIC BOT AND SENDING THE INFO TO LUCY SERVER")
     
    
 loop = asyncio.get_event_loop()

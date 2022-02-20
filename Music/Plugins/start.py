@@ -90,7 +90,7 @@ async def start(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/8b1d8ec76a20a379444ec.jpg",
-        caption= url=f"https://t.me/V3N0M_0P/39",
+        caption=f""" SOURCE AWAILABLE AT @V3N0M_0P """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [

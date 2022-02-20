@@ -1,4 +1,4 @@
-from Music.config import UPDATES_CHANNEL, ZAID_SUPPORT
+from Music.config import UPDATES_CHANNEL, GROUP_SUPPORT
 from pyrogram.types import (
     CallbackQuery,
     InlineKeyboardButton,
@@ -20,8 +20,8 @@ def play_markup(videoid, user_id):
                 InlineKeyboardButton(text="🖱 ᴍᴇɴᴜ", callback_data=f'other {videoid}|{user_id}'),
             ],
             [
-                InlineKeyboardButton(text=f"✨ SUPPORT", url=f"https://t.me/lucyhelp"),
-                InlineKeyboardButton(text=f"✨ CHANNEL", url=f"https://t.me/thanosowner"),
+                InlineKeyboardButton(text=f"✨ SUPPORT", url=f"https://t.me/GROUP_SUPPORT"),
+                InlineKeyboardButton(text=f"✨ CHANNEL", url=f"https://t.me/CHANNEL_SUPPORT"),
             ],
             [      
                 InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data=f'close2')

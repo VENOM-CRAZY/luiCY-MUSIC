@@ -21,8 +21,8 @@ Client(
 ).start()
 
 
-print(f"[INFO]: LUCY STARTED AS {BOT_NAME}!")
-print(f"[INFO]: LUCY ASSISTANT STARTED AS {ASSNAME}!")
+print(f"[INFO]:  STARTED AS {BOT_NAME}!")
+print(f"[INFO]:  ASSISTANT STARTED AS {ASSNAME}!")
 
 
 

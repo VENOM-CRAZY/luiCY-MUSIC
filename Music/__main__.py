@@ -21,15 +21,15 @@ Client(
 ).start()
 
 
-print(f"[INFO]: LUCY STARTED AS {BOT_NAME}!")
-print(f"[INFO]: LUCY ASSISTANT STARTED AS {ASSNAME}!")
+print(f"[INFO]:  STARTED AS {BOT_NAME}!")
+print(f"[INFO]:  ASSISTANT STARTED AS {ASSNAME}!")
 
 
 
 async def load_start():
     restart_data = await clean_restart_stage()
     if restart_data:
-        print("[INFO]: SENDING RESTART STATUS TO LUCY SERVER")
+        print("[INFO]: SENDING RESTART STATUS TO  SERVER")
         try:
             await app.edit_message_text(
                 restart_data["chat_id"],

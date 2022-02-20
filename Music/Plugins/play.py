@@ -99,7 +99,7 @@ async def play(_, message: Message):
         if message.chat.username:
             try: 
                 await ASS_ACC.join_chat(f"{message.chat.username}")
-                await message.reply(f"✅ LUCY {ASSNAME} Joined Successfully",) 
+                await message.reply(f"✅ assistant {ASSNAME} Joined Successfully",) 
                 await remove_active_chat(chat_id)
             except Exception as e:
                 await message.reply_text(f"❌ __**Assistant Failed To Join**__\n\n**Reason**:{e}")
@@ -109,7 +109,7 @@ async def play(_, message: Message):
                 xxy = await app.export_chat_invite_link(message.chat.id)
                 yxy = await app.revoke_chat_invite_link(message.chat.id, xxy)
                 await ASS_ACC.join_chat(yxy.invite_link)
-                await message.reply(f"✅ LUCY {ASSNAME} Joined Successfully",) 
+                await message.reply(f"✅ assistant {ASSNAME} Joined Successfully",) 
                 await remove_active_chat(chat_id)
             except UserAlreadyParticipant:
                 pass
@@ -147,7 +147,7 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Selected Audio from Telegram"
-        link = "https://t.me/Timesisnotwaiting"
+        link = "https://t.me/VENOMxCRAZY"
         thumb = "cache/audioplay.jpg"
         videoid = "smex1"
     elif url:

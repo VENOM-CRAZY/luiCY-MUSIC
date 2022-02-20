@@ -63,4 +63,4 @@ run()
 idle()
 loop.close()
 
-print("[LOG] CLOSING LUCY MUSIC BOT")
+print("[LOG] CLOSING LUC MUSIC BOT")
